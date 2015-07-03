@@ -1,0 +1,16 @@
+{
+   "name": "Tmewes/ToggleConfigTabs",
+   "license": "OSL-3.0",
+   "type": "magento-module",
+   "description": "Creates a button in the admin system configuration for opening/closing all config tabs on the current page at once instead of clicking every single one to see all contents.",
+   "homepage": "https://github.com/tmewes/Tmewes_ToggleConfigTabs",
+   "require": {
+      "magento-hackathon/magento-composer-installer": "*"
+   },
+    "authors":[
+        {
+            "name":"Tino Mewes",
+            "email":"tinomewes@gmail.com"
+        }
+    ]
+}

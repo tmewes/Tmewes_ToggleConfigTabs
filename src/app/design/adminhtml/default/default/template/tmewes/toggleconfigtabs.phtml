@@ -1,0 +1,39 @@
+<?php
+/**
+ * @category   Tmewes
+ * @package    Tmewes_ToggleConfigTabs
+ * @license    http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
+ * @author     Tino Mewes <tinomewes@gmail.com>
+ */
+?>
+<script type="text/javascript">
+
+    document.observe("dom:loaded", function() {
+        
+        var openTabsButton = new Element("a", { "id": "opentabs", "class": "opentabs togglebutton", href: "#", onclick: "openAllTabs(); $('closetabs').show(); $('opentabs').hide(); return false;" }).update("<?php echo $this->__('Open All Tabs'); ?>");
+        var closeTabsButton = new Element("a", { "id": "closetabs", "class": "closetabs togglebutton", href: "#", onclick: "closeAllTabs(); $('closetabs').hide(); $('opentabs').show(); return false;" }).update("<?php echo $this->__('Close All Tabs'); ?>");
+
+        $$(".content-header .form-buttons").first().insert({ top: closeTabsButton }).insert({ top: openTabsButton });
+        $('closetabs').hide();
+
+    });
+
+    function openAllTabs() {
+        $$('.section-config').each(function (e) {
+            $(e).addClassName('active')
+                .firstDescendant().firstDescendant().addClassName('open')
+                .up().next().setValue(1)
+                .next().show();
+        });
+    }
+
+    function closeAllTabs() {
+        $$('.section-config').each(function (e) {
+            $(e).removeClassName('active')
+                .firstDescendant().firstDescendant().removeClassName('open')
+                .up().next().setValue(0)
+                .next().hide();
+        });
+    }
+
+</script>

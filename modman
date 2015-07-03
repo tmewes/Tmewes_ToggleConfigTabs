@@ -1,0 +1,7 @@
+src/app/etc/modules/Tmewes_ToggleConfigTabs.xml app/etc/modules/Tmewes_ToggleConfigTabs.xml
+src/app/code/community/Tmewes/ToggleConfigTabs app/code/community/Tmewes/ToggleConfigTabs
+src/app/design/adminhtml/default/default/layout/tmewes_toggleconfigtabs.xml app/design/adminhtml/default/default/layout/tmewes_toggleconfigtabs.xml
+src/app/design/adminhtml/default/default/template/tmewes/toggleconfigtabs.phtml app/design/adminhtml/default/default/template/tmewes/toggleconfigtabs.phtml
+src/app/locale/de_DE/Tmewes_ToggleConfigTabs.csv app/locale/de_DE/Tmewes_ToggleConfigTabs.csv
+src/app/locale/en_US/Tmewes_ToggleConfigTabs.csv app/locale/en_US/Tmewes_ToggleConfigTabs.csv
+src/skin/adminhtml/default/default/tmewes/css/toggleconfigtabs.css skin/adminhtml/default/default/tmewes/css/toggleconfigtabs.css
